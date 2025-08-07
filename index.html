@@ -16,7 +16,75 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <h1>Landing CERCA</h1>
+    <div id="home" class="navbar__banner">
+        <div class="navbar__banner--container">
+            <!-- Header -->
+            <header>
+                <!-- Menu mobile -->
+                <div style="display: none;" id="menuMob" class="menu--mob d-lg-none">
+                    <!-- botón de cierre -->
+                    <div class="menu--mob__header container py-2 d-flex flex-row align-items-center justify-content-end">
+                        <button id="btnCloseMenuMob" class="menu--mob__header__btn btn border-0 p-0">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    <div class="menu--mob__items container d-flex flex-column justify-content-evenly" id="">
+                        <a class="menu--mob__items__logo px-4" href="./index.html">
+                            <img class="navbar-brand-item" src="./assets/img/logo-hrznt.png" alt="Logo Cerca.pro">
+                        </a>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a id="btnMenuMob1" class="nav-link px-4 text-white fw-light" href="#home">Inicio</a></li>
+                            <li class="nav-item"><a id="btnMenuMob2" class="nav-link px-4 text-white fw-light" href="#nosotros">Acerca de</a></li>
+                            <li class="nav-item"><a id="btnMenuMob3" class="nav-link px-4 text-white fw-light" href="#beneficios">Servicios</a></li>
+                            <li class="nav-item"><a id="btnMenuMob5" class="nav-link px-4 text-white fw-light" href="#testimonios">Testimonios</a></li>
+                            <li class="nav-item"><a id="btnMenuMob6" class="nav-link px-4 text-white fw-light" href="#contacto">Contacto</a></li>
+                        </ul>
+                        <div class="px-4">
+                            <a class="menu--mob__items__btn btn btn-light rounded-pill px-4" href="https://app.cerca.pro/" target="_blank">Inicia sesión</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navbar mobile -->
+                <nav class="navbar--mob navbar d-lg-none py-2">
+                    <div class="container">
+                        <a class="navbar--mob__logo navbar-brand" href="./index.html">
+                            <img class="navbar-brand-item" src="./assets/img/logo-hrznt.png" alt="Logo Cerca.pro">
+                        </a>
+                        <button id="btnOpenMenuMob" class="navbar--mob__btn btn border-0 p-0">
+                            <i class="bi bi-filter-left"></i>
+                        </button>
+                    </div>
+                </nav>
+                <!-- Navbar y menú Desktop -->
+                <nav class="navbar--desktop d-none d-lg-block navbar navbar-expand-lg py-4">
+                    <div class="container">
+                        <a class="navbar--desktop__logo navbar-brand" href="./index.html">
+                            <img class="navbar-brand-item" src="./assets/img/logo-hrznt.png" alt="Logo Cerca.pro">
+                        </a>
+                        <div class="navbar--desktop__items" id="">
+                            <ul class="navbar-nav">
+                                <li class="nav-item mx-4 d-flex align-items-center"><a class="nav-link p-0 fw-semibold" href="#home">Inicio</a></li>
+                                <li class="nav-item mx-4 d-flex align-items-center"><a class="nav-link p-0 fw-semibold" href="#nosotros">Acerca de</a></li>
+                                <li class="nav-item mx-4 d-flex align-items-center"><a class="nav-link p-0 fw-semibold" href="#beneficios">Servicios</a></li>
+                                <li class="nav-item mx-4 d-flex align-items-center"><a class="nav-link p-0 fw-semibold" href="#testimonios">Testimonios</a></li>
+                                <li class="nav-item mx-4 d-flex align-items-center"><a class="nav-link p-0 fw-semibold" href="#contacto">Contacto</a></li>
+                                <li class="nav-item mx-4 d-flex align-items-center"><a class="btn__login btn rounded-pill px-4" href="https://app.cerca.pro/" target="_blank">Inicia sesión</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- Banner -->
+            <section>
+                <div class="banner__info container-fluid d-flex flex-column">
+                    <div class="container">
+                        <h5>Para llegar a la cima, primero debes alcanzar</h5>
+                        <h1 class="mb-4">cada punto clave del camino</h1>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 
     <script src="./assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

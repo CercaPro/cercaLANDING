@@ -3,3 +3,167 @@
 h1, h2, h3, h4, h5, h6, p, ul, li, a {
     font-family: "Montserrat", sans-serif;
 }
+
+.navbar__banner {
+    .navbar__banner--container {
+        // background-color: #006DF0;
+
+        header {
+            .btn__login {
+                background-color: #006DF0;
+                color: #fff;
+                font-weight: 600;
+            }
+
+            .btn__login:hover {
+                outline: 2px solid #006DF0;
+                background-color: rgba(0, 0, 0, 0);
+                color: #006DF0;
+            }
+
+            .menu--mob {
+                position: fixed;
+                width: 100vw;
+                height: 100vh;
+                z-index: 100;
+                background-color: #006DF0;
+                grid-template-rows: 76px auto;
+
+                &__header {
+                    &__btn {
+                        height: 60px;
+
+                        i {
+                            font-size: 28px;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                &__items {
+                    &__logo {
+                        img {
+                            height: 50px;
+                        }
+                    }
+
+                    &__btn {
+                        font-weight: 500;
+                        color: #006DF0;
+                    }
+                }
+            }
+
+            .navbar--mob {
+                z-index: 4;
+                width: 100%;
+                position: fixed;
+
+                &__logo {
+                    img {
+                        height: 50px;
+                    }
+                }
+
+                &__btn {
+                    i {
+                        font-size: 28px;
+                        color: #006DF0;
+                    }
+                }
+            }
+        }
+
+        .banner__info {
+            height: 600px;
+            padding: 96px 20px 20px 20px;
+            background-image: url("../img/banner-mob.jpg");
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            h5 {
+                color: #323232;
+                font-size: 16px;
+                width: 75%;
+            }
+            h1 {
+                width: 75%;
+                color: #006DF0;
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+// breakpoint sm
+@media screen and (min-width: 768px) {
+    .navbar__banner {
+        .navbar__banner--container {
+            .banner__info {
+                background-image: url("../img/banner-desktop.jpg");
+                background-position: bottom center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+}
+
+// breakpoint lg
+@media screen and (min-width: 992px) {
+    .navbar__banner {
+        .navbar__banner--container {
+            header {
+                .navbar--desktop {
+                    position: fixed;
+                    width: 100%;
+                    margin: 0 auto;
+
+                    &__logo {
+                        img {
+                            height: 60px;
+                        }
+                    }
+
+                    .nav-link {
+                        position: relative;
+                        display: inline-block;
+                        cursor: pointer;
+                        font-weight: 600;
+                    }
+
+                    .nav-link::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: -4px;
+                        width: 0;
+                        height: 2px;
+                        background-color: #006DF0;
+                        transition: width 0.3s ease;
+                    }
+
+                    .nav-link:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .banner__info {
+                padding-top: 158px;
+
+                h1, h5 {width: 100%}
+                h5 {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+// breakpoint xl
+@media screen and (min-width: 1200px) {
+
+}

@@ -10749,3 +10749,113 @@ textarea.form-control-lg {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, ul, li, a {
   font-family: "Montserrat", sans-serif;
 }
+
+.navbar__banner .navbar__banner--container header .btn__login {
+  background-color: #006DF0;
+  color: #fff;
+  font-weight: 600;
+}
+.navbar__banner .navbar__banner--container header .btn__login:hover {
+  outline: 2px solid #006DF0;
+  background-color: rgba(0, 0, 0, 0);
+  color: #006DF0;
+}
+.navbar__banner .navbar__banner--container header .menu--mob {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: #006DF0;
+  grid-template-rows: 76px auto;
+}
+.navbar__banner .navbar__banner--container header .menu--mob__header__btn {
+  height: 60px;
+}
+.navbar__banner .navbar__banner--container header .menu--mob__header__btn i {
+  font-size: 28px;
+  color: #fff;
+}
+.navbar__banner .navbar__banner--container header .menu--mob__items__logo img {
+  height: 50px;
+}
+.navbar__banner .navbar__banner--container header .menu--mob__items__btn {
+  font-weight: 500;
+  color: #006DF0;
+}
+.navbar__banner .navbar__banner--container header .navbar--mob {
+  z-index: 4;
+  width: 100%;
+  position: fixed;
+}
+.navbar__banner .navbar__banner--container header .navbar--mob__logo img {
+  height: 50px;
+}
+.navbar__banner .navbar__banner--container header .navbar--mob__btn i {
+  font-size: 28px;
+  color: #006DF0;
+}
+.navbar__banner .navbar__banner--container .banner__info {
+  height: 600px;
+  padding: 96px 20px 20px 20px;
+  background-image: url("../img/banner-mob.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar__banner .navbar__banner--container .banner__info h5, .navbar__banner .navbar__banner--container .banner__info .h5 {
+  color: #323232;
+  font-size: 16px;
+  width: 75%;
+}
+.navbar__banner .navbar__banner--container .banner__info h1, .navbar__banner .navbar__banner--container .banner__info .h1 {
+  width: 75%;
+  color: #006DF0;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar__banner .navbar__banner--container .banner__info {
+    background-image: url("../img/banner-desktop.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar__banner .navbar__banner--container header .navbar--desktop {
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .navbar__banner .navbar__banner--container header .navbar--desktop__logo img {
+    height: 60px;
+  }
+  .navbar__banner .navbar__banner--container header .navbar--desktop .nav-link {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .navbar__banner .navbar__banner--container header .navbar--desktop .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #006DF0;
+    transition: width 0.3s ease;
+  }
+  .navbar__banner .navbar__banner--container header .navbar--desktop .nav-link:hover::after {
+    width: 100%;
+  }
+  .navbar__banner .navbar__banner--container .banner__info {
+    padding-top: 158px;
+  }
+  .navbar__banner .navbar__banner--container .banner__info h1, .navbar__banner .navbar__banner--container .banner__info .h1, .navbar__banner .navbar__banner--container .banner__info h5, .navbar__banner .navbar__banner--container .banner__info .h5 {
+    width: 100%;
+  }
+  .navbar__banner .navbar__banner--container .banner__info h5, .navbar__banner .navbar__banner--container .banner__info .h5 {
+    font-size: 24px;
+  }
+}
