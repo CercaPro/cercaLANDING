@@ -10750,6 +10750,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, ul, li, a {
   font-family: "Montserrat", sans-serif;
 }
 
+.montserrat-600 {
+  font-weight: 600;
+}
+
+.text-blue-cerca {
+  color: #006DF0;
+}
+
 .container-100 {
   width: 100%;
 }
@@ -10818,9 +10826,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, ul, li, a {
 }
 
 main .nosotros {
-  padding: 104px 0 64px 0;
+  padding: 104px 24px 64px 24px;
 }
 main .nosotros .globo {
+  padding: 24px 48px;
   position: relative;
   border-radius: 16px;
 }
@@ -10857,6 +10866,9 @@ main .nosotros .globo::before {
   z-index: 1;
   filter: drop-shadow(-1px 2px 2px rgba(0, 0, 0, 0.075)) drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.075));
 }
+main .certificados {
+  padding: 64px 24px;
+}
 main .certificados p span {
   font-weight: 600;
   font-style: italic;
@@ -10866,21 +10878,20 @@ main .certificados img {
   width: 240px;
 }
 main .cercapro {
-  background-color: #006DF0;
-  position: relative;
-  margin-bottom: 140px;
+  background: linear-gradient(to bottom, #006DF0 75%, transparent 25%);
 }
 main .cercapro .cercapro--info {
-  margin-bottom: 40px;
+  padding: 64px 24px 0 24px;
 }
 main .cercapro .cercapro--info .logo {
   width: 160px;
 }
 main .cercapro .cercapro--info .pantalla {
-  position: absolute;
-  max-width: 90%;
-  top: 220px;
+  max-width: 100%;
   border-radius: 8px;
+}
+main .mensaje {
+  padding: 64px 24px;
 }
 main .mensaje p span {
   font-weight: 600;
@@ -10893,6 +10904,9 @@ main .mensaje h4 span, main .mensaje .h4 span {
   font-size: 60px;
   color: #006DF0;
   line-height: 60px;
+}
+main .caracteristicas {
+  padding: 64px 24px;
 }
 main .caracteristicas .title .ico-bulb {
   width: 48px;
@@ -10911,6 +10925,120 @@ main .caracteristicas p span {
   font-weight: 600;
   font-style: italic;
 }
+main .beneficios {
+  padding: 64px 24px;
+}
+main .beneficios__buttons button {
+  font-size: 14px;
+  font-weight: 500;
+}
+main .beneficios__slider .carousel {
+  top: auto !important;
+  bottom: 0;
+  margin: 0;
+  justify-content: flex-start;
+}
+main .beneficios__slider .carousel .btn__indicador {
+  border: none;
+  border-radius: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #dee2e6 !important;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+main .beneficios__slider .carousel .btn__indicador.active {
+  width: 28px;
+  background-color: #006DF0 !important;
+}
+main .beneficios__slider .inner {
+  padding-top: 0 !important;
+}
+main .beneficios__slider .inner .item {
+  height: 980px;
+}
+main .beneficios__slider .carousel-indicators {
+  top: 0;
+  margin: 0;
+}
+main .beneficios__slider .carousel-inner {
+  padding-top: 80px;
+}
+main .beneficios__slider__item {
+  background-color: #fff;
+}
+main .beneficios__slider__item__text {
+  width: 100%;
+}
+main .beneficios__slider__item__img {
+  width: 100%;
+}
+main .beneficios__slider__item__img p {
+  font-size: 10px;
+}
+main .beneficios__slider__item__img img {
+  max-width: 100%;
+  height: auto;
+}
+main .testimonios {
+  padding: 64px 24px;
+}
+main .testimonios h3, main .testimonios .h3 {
+  margin-bottom: 32px;
+}
+main .testimonios__buttons button {
+  font-size: 14px;
+  font-weight: 500;
+}
+main .testimonios__slider .carousel {
+  top: auto !important;
+  bottom: 0;
+  margin: 0;
+  justify-content: flex-start;
+}
+main .testimonios__slider .carousel .btn__indicador {
+  border: none;
+  border-radius: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #dee2e6 !important;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+main .testimonios__slider .carousel .btn__indicador.active {
+  width: 28px;
+  background-color: #006DF0 !important;
+}
+main .testimonios__slider .inner {
+  padding-top: 0 !important;
+}
+main .testimonios__slider .inner .item {
+  margin-bottom: 40px;
+}
+main .testimonios__slider .carousel-indicators {
+  top: 0;
+  margin: 0;
+}
+main .testimonios__slider .carousel-inner {
+  padding-top: 80px;
+}
+main .testimonios__slider__item {
+  background-color: #fff;
+}
+main .testimonios__slider__item__avatar img {
+  width: 48px;
+  height: 48px;
+}
+main .testimonios__slider__item__avatar p {
+  font-size: 12px;
+  line-height: inherit;
+}
+main .testimonios__slider__item__estrellas i {
+  font-size: 20px;
+  color: #006DF0;
+}
+
+.contacto {
+  padding: 64px 24px;
+}
 
 @media screen and (min-width: 768px) {
   .navbar__banner .navbar__banner--container .banner__info {
@@ -10923,6 +11051,10 @@ main .caracteristicas p span {
 @media screen and (min-width: 992px) {
   .container-50 {
     width: 50%;
+  }
+
+  .container-65 {
+    width: 65%;
   }
 
   .container-75 {
@@ -10967,22 +11099,71 @@ main .caracteristicas p span {
     font-size: 24px;
   }
 
+  main .nosotros {
+    padding-left: 0;
+    padding-right: 0;
+  }
   main .nosotros .globo .pregunta {
     width: 92px;
   }
-  main .cercapro {
-    margin-bottom: 260px;
+  main .certificados {
+    padding: 64px 0;
   }
-  main .cercapro .cercapro--info {
-    margin-bottom: 300px;
-  }
-  main .cercapro .cercapro--info .pantalla {
-    max-width: 100%;
-    top: 200px;
+  main .mensaje {
+    padding: 64px 0;
   }
   main .mensaje h4 span, main .mensaje .h4 span {
     font-size: 60px;
     color: #006DF0;
     line-height: 60px;
+  }
+  main .caracteristicas {
+    padding: 64px 0;
+  }
+  main .beneficios {
+    padding: 64px 0;
+  }
+  main .beneficios__slider .inner .item {
+    height: 480px;
+  }
+  main .beneficios__slider__item {
+    height: 100%;
+  }
+  main .beneficios__slider__item__text {
+    width: 65%;
+  }
+  main .beneficios__slider__item__img {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .beneficios__slider__item__img img {
+    max-height: 400px;
+  }
+  main .testimonios {
+    padding: 64px 0;
+  }
+  main .testimonios h3, main .testimonios .h3 {
+    margin-bottom: 64px;
+  }
+  main .testimonios__item {
+    background-color: #fff;
+  }
+  main .testimonios__item__avatar img {
+    width: 48px;
+    height: 48px;
+  }
+  main .testimonios__item__avatar p {
+    font-size: 12px;
+    line-height: inherit;
+  }
+  main .testimonios__item__estrellas i {
+    font-size: 20px;
+    color: #006DF0;
+  }
+
+  .contacto {
+    padding: 64px 0;
   }
 }

@@ -86,7 +86,7 @@
         </div>
     </div>
     <!-- Main -->
-     <main>
+    <main>
         <!-- Acerca de -->
         <section id="nosotros" class="nosotros container container-100 container-50">
             <div class="globo px-4 py-5 p-lg-5 border border-light shadow-sm d-flex flex-column align-items-center">
@@ -98,7 +98,7 @@
                 </h5>
             </div>
         </section>
-        <section class="certificados container container-100 container-50 px-4 py-5 p-lg-5 d-flex flex-column flex-lg-row align-items-center gap-4">
+        <section class="certificados container container-100 container-50 d-flex flex-column flex-lg-row align-items-center gap-4">
             <p class="text-center">Habíamos visto de todo: certificados colgados en la pared 
                 como trofeos olvidados, planillas sueltas en carpetas compartidas, 
                 métricas desordenadas, evidencias guardadas en mails perdidos y equipos 
@@ -106,27 +106,27 @@
             </p>
             <img src="./assets/img/ilustracion.png" alt="Ilustración" >
         </section>
-        <section class="cercapro container-fluid d-flex flex-column align-items-center">
-            <div class="cercapro--info container-100 container-75 px-4 py-5 p-lg-5 d-flex flex-column align-items-center">
+        <section class="cercapro container-fluid d-flex flex-column align-items-center p-0">
+            <div class="cercapro--info container-100 container-75 d-flex flex-column align-items-center">
                 <h5 class="text-center text-white mb-4">Fue entonces cuando decidimos crear</h5>
-                <img class="logo" src="./assets/img/logo-hrznt-2.png" alt="Logo Cerca.pro" >
-                <img class="pantalla container-100 container-75 shadow-sm" src="./assets/img/pantalla.jpg" alt="Pantalla Cerca.pro" >
+                <img class="logo mb-4" src="./assets/img/logo-hrznt-2.png" alt="Logo Cerca.pro" >
+                <img class="pantalla shadow-sm" src="./assets/img/pantalla.jpg" alt="Pantalla Cerca.pro" >
             </div>
         </section>
-        <section class="mensaje container container-100 container-50 px-4 py-5 p-lg-5 d-flex flex-column align-items-center gap-4">
-            <p class="text-center">
+        <section class="mensaje container container-100 container-50 d-flex flex-column align-items-center gap-4">
+            <p class="text-center p-0 m-0">
                 Una plataforma pensada no para cumplir “por cumplir”, sino para <span>transformar 
                 la gestión de calidad, sostenibilidad y cumplimiento en una experiencia estructurada, 
                 transparente y poderosa.</span>
             </p>
-            <h4 class="text-center d-flex flex-row">
+            <h4 class="text-center d-flex flex-row p-0 m-0">
                 <span class="align-self-start">“</span>
                 Porque creemos que llegar a la cima no se trata solo de subir, sino de alcanzar 
                 cada punto clave del camino, con evidencia, con método y con visión.
                 <span class="align-self-end">”</span>
             </h4>
         </section>
-        <section class="caracteristicas container container-100 container-75 px-4 py-5 p-lg-5">
+        <section class="caracteristicas container container-100 container-65">
             <div class="d-flex flex-column flex-lg-row mb-5 gap-4 gap-lg-5">
                 <div class="title d-flex flex-column align-items-center">
                     <img class="ico-bulb" src="./assets/img/ico-bulb.svg" alt="" >
@@ -153,17 +153,278 @@
                     </div>
                 </div>
             </div>
-            <p class="text-center">
+            <p class="text-center m-0 p-0">
                 Trabajamos para empresas que entienden que la calidad, la sostenibilidad 
                 y la mejora continua no son un proyecto puntual, <span>sino una forma de gestionar 
                 con propósito y reputación.</span>
             </p>
         </section>
         <!-- Beneficios -->
-        <section>
-            
+        <section id="beneficios" class="beneficios container container-100 container-65">
+            <h3 class="text-blue-cerca montserrat-600 mb-4 text-center">Nuestros servicios</h3>
+            <!-- Carrusel -->
+            <div id="carouselBeneficios" class="carousel slide beneficios__slider" data-bs-ride="carousel">
+                <div class="carousel-indicators carousel beneficios__buttons d-flex flex-row justify-content-center">
+                    <button data-bs-target="#carouselBeneficios" data-bs-slide-to="0" class="btn__indicador me-2 active" aria-current="true"></button>
+                    <button data-bs-target="#carouselBeneficios" data-bs-slide-to="1" class="btn__indicador me-2"></button>
+                    <button data-bs-target="#carouselBeneficios" data-bs-slide-to="2" class="btn__indicador"></button>
+                </div>
+                <div class="carousel-inner inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item item active">
+                        <div class="beneficios__slider__item d-flex flex-column flex-lg-row-reverse align-items-center gap-lg-5">
+                            <!-- Textos -->
+                            <div class="beneficios__slider__item__text d-flex flex-column">
+                                <div class="d-flex flex-row align-items-center mb-3">
+                                    <h5 class="m-0 text-blue-cerca">Certificación de Normas (ISO y más)</h5>
+                                </div>
+                                <p class="text-start">Acompañamos a organizaciones en la implementación, mantenimiento 
+                                    y mejora de sistemas de gestión como <span class="montserrat-600">ISO 9001, ISO 14001, ISO 45001, ISO 27001, entre otras.</span>
+                                    Desde el diagnóstico inicial hasta la auditoría final, cada evidencia, responsable y avance 
+                                    queda trazado dentro de cerca.pro.
+                                    <br />
+                                    <br />
+                                    <span class="text-blue-cerca montserrat-600">Ofrecemos capacitación, auditorías internas simuladas y soporte documental completo.</span>
+                                    <br />
+                                    <br />
+                                    Nuestra plataforma permite demostrar ante auditores externos que la gestión no se basa en papeles, 
+                                    sino en hechos medibles y procesos vivos. Ideal para quienes quieren certificar con convicción, 
+                                    no solo por obligación.
+                                </p>
+                            </div>
+                            <!-- Imagen -->
+                            <div class="beneficios__slider__item__img">
+                                <img class="mb-4" src="./assets/img/slider-1.png" alt="Badges">
+                                <p class="text-center m-0">*cualquier roadmap de cumplimiento</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item item">
+                        <div class="beneficios__slider__item d-flex flex-column flex-lg-row-reverse align-items-center gap-lg-5">
+                            <!-- Textos -->
+                            <div class="beneficios__slider__item__text d-flex flex-column">
+                                <div class="d-flex flex-row align-items-center mb-3">
+                                    <h5 class="m-0 text-blue-cerca">Proyectos de Bonos de Carbono</h5>
+                                </div>
+                                <p class="text-start">Brindamos soporte integral para el desarrollo y gestión de proyectos 
+                                    orientados a la reducción de emisiones y la generación de bonos de carbono. 
+                                    <br />
+                                    <br />
+                                    Ayudamos con inventarios de emisiones, planes de mitigación, validación técnica y preparación 
+                                    para auditorías externas o mercados voluntarios.
+                                    <br />
+                                    <br />
+                                    <span class="text-blue-cerca montserrat-600">Con cerca.pro, todas las evidencias, reportes y métricas de impacto quedan trazadas, accesibles y actualizadas.</span>
+                                    Esto profesionaliza los proyectos, facilita la verificación y garantiza transparencia ante terceros. 
+                                    Ideal para empresas que apuestan por la acción climática con responsabilidad y datos verificables.
+                                </p>
+                            </div>
+                            <!-- Imagen -->
+                            <div class="beneficios__slider__item__img">
+                                <img class="mb-4" src="./assets/img/slider-2.png" alt="Badges">
+                                <p class="text-center m-0">*cualquier roadmap de cumplimiento</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item item">
+                        <div class="beneficios__slider__item d-flex flex-column flex-lg-row-reverse align-items-center gap-lg-5">
+                            <!-- Textos -->
+                            <div class="beneficios__slider__item__text d-flex flex-column">
+                                <div class="d-flex flex-row align-items-center mb-3">
+                                    <h5 class="m-0 text-blue-cerca">Economía Circular y Sostenibilidad</h5>
+                                </div>
+                                <p class="text-start">
+                                    <span class="text-blue-cerca montserrat-600">
+                                        Diseñamos, estructuramos y documentamos iniciativas de economía circular, 
+                                        reutilización de materiales, eficiencia energética, gestión de residuos, 
+                                        y otras prácticas sostenibles alineadas con criterios ESG.
+                                    </span>
+                                    <br />
+                                    <br />
+                                    A través de cerca.pro, cada acción queda registrada, asociada a responsables, 
+                                    con seguimiento de métricas clave y respaldo documental. Esto permite comunicar 
+                                    resultados de forma clara, enfrentar auditorías, licitaciones o reportes de sostenibilidad 
+                                    con evidencia sólida. 
+                                    <br />
+                                    <br />
+                                    Una solución práctica para organizaciones que integran la sostenibilidad a su estrategia 
+                                    y quieren mostrarlo con datos, no solo con discurso.
+                                </p>
+                            </div>
+                            <!-- Imagen -->
+                            <div class="beneficios__slider__item__img">
+                                <img class="mb-4" src="./assets/img/slider-3.png" alt="Badges">
+                                <p class="text-center m-0">*cualquier roadmap de cumplimiento</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBeneficios" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselBeneficios" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
-     </main>
+        <!-- Testimonios -->
+        <section id="testimonios" class="testimonios container container-100 container-75">
+            <h3 class="text-blue-cerca montserrat-600 text-center">Nuestro éxito es el de nuestros clientes</h3>
+            <!-- Slider mobile -->
+            <div id="carouselTestimonios" class="carousel slide testimonios__slider d-lg-none" data-bs-ride="carousel">
+                <div class="carousel-indicators carousel testimonios__buttons d-flex flex-row justify-content-center">
+                    <button data-bs-target="#carouselTestimonios" data-bs-slide-to="0" class="btn__indicador me-2 active" aria-current="true"></button>
+                    <button data-bs-target="#carouselTestimonios" data-bs-slide-to="1" class="btn__indicador me-2"></button>
+                    <button data-bs-target="#carouselTestimonios" data-bs-slide-to="2" class="btn__indicador"></button>
+                </div>
+                <div class="carousel-inner inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item item active">
+                        <div class="testimonios__slider__item d-flex flex-column flex-lg-row-reverse align-items-center gap-lg-5">
+                            <!-- Persona -->
+                            <div class="testimonios__slider__item__avatar d-flex flex-row align-items-center gap-3 mb-3">
+                                <img class="rounded-pill" src="./assets/img/avatar-1.jpg" alt="Testimonio 1">
+                                <div class="d-flex flex-column">
+                                    <p class="mb-1 p-0"><b>Laura Méndez</b></p>
+                                    <p class="m-0 p-0">Directora General</p>
+                                </div>
+                            </div>
+                            <!-- Estrellas -->
+                            <div class="testimonios__slider__item__estrellas mb-3">
+                                <i class="bi bi-star-fill me-1"></i>
+                                <i class="bi bi-star-fill me-1"></i>
+                                <i class="bi bi-star-fill me-1"></i>
+                                <i class="bi bi-star-fill me-1"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="p-0 m-0 text-center">Servicio de excelencia! Certificamos ISO 14001 en tiempos record gracias a cerca.pro.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item item">
+                        <div class="testimonios__slider__item d-flex flex-column flex-lg-row-reverse align-items-center gap-lg-5">
+                            <!-- Persona -->
+                            <div class="testimonios__slider__item__avatar d-flex flex-row align-items-center gap-3 mb-3">
+                                <img class="rounded-pill" src="./assets/img/avatar-2.jpg" alt="Testimonio 2">
+                                <div class="d-flex flex-column">
+                                    <p class="mb-1 p-0"><b>María del Pilar Ros</b></p>
+                                    <p class="m-0 p-0">Directora General</p>
+                                </div>
+                            </div>
+                            <!-- Estrellas -->
+                            <div class="testimonios__slider__item__estrellas mb-3">
+                                <i class="bi bi-star-fill me-1"></i>
+                                <i class="bi bi-star-fill me-1"></i>
+                                <i class="bi bi-star-fill me-1"></i>
+                                <i class="bi bi-star-fill me-1"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <p class="p-0 m-0 text-center">Agradezco a todo el equipo de cerca.pro por estar cerca de verdad de nuestras necesidades.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item item">
+                        <div class="testimonios__slider__item d-flex flex-column flex-lg-row-reverse align-items-center gap-lg-5">
+                            <!-- Persona -->
+                            <div class="testimonios__slider__item__avatar d-flex flex-row align-items-center gap-3 mb-3">
+                                <img class="rounded-pill" src="./assets/img/avatar-3.jpg" alt="Testimonio 3">
+                                <div class="d-flex flex-column">
+                                    <p class="mb-1 p-0"><b>Juan Cruz González</b></p>
+                                    <p class="m-0 p-0">Director General</p>
+                                </div>
+                            </div>
+                            <!-- Estrellas -->
+                            <div class="testimonios__slider__item__estrellas mb-3">
+                                <i class="bi bi-star-fill me-1"></i>
+                                <i class="bi bi-star-fill me-1"></i>
+                                <i class="bi bi-star-fill me-1"></i>
+                                <i class="bi bi-star-fill me-1"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <p class="p-0 m-0 text-center">Super recomiendo los servicios de cerca.pro. Son profesionales en lo que hacen.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- Desktop -->
+            <div class="d-none d-lg-block container">
+                <div class="row">
+                    <div class="col d-flex flex-column align-items-center">
+                        <!-- Persona -->
+                        <div class="testimonios__item__avatar d-flex flex-row align-items-center gap-3 mb-3">
+                            <img class="rounded-pill" src="./assets/img/avatar-1.jpg" alt="Testimonio 1">
+                            <div class="d-flex flex-column">
+                                <p class="mb-1 p-0"><b>Laura Méndez</b></p>
+                                <p class="m-0 p-0">Directora General</p>
+                            </div>
+                        </div>
+                        <!-- Estrellas -->
+                        <div class="testimonios__item__estrellas mb-3">
+                            <i class="bi bi-star-fill me-1"></i>
+                            <i class="bi bi-star-fill me-1"></i>
+                            <i class="bi bi-star-fill me-1"></i>
+                            <i class="bi bi-star-fill me-1"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="p-0 m-0 text-center">Servicio de excelencia! Certificamos ISO 14001 en tiempos record gracias a cerca.pro.</p>
+                    </div>
+                    <div class="col d-flex flex-column align-items-center">
+                        <!-- Persona -->
+                        <div class="testimonios__item__avatar d-flex flex-row align-items-center gap-3 mb-3">
+                            <img class="rounded-pill" src="./assets/img/avatar-2.jpg" alt="Testimonio 2">
+                            <div class="d-flex flex-column">
+                                <p class="mb-1 p-0"><b>María del Pilar Ros</b></p>
+                                <p class="m-0 p-0">Directora General</p>
+                            </div>
+                        </div>
+                        <!-- Estrellas -->
+                        <div class="testimonios__item__estrellas mb-3">
+                            <i class="bi bi-star-fill me-1"></i>
+                            <i class="bi bi-star-fill me-1"></i>
+                            <i class="bi bi-star-fill me-1"></i>
+                            <i class="bi bi-star-fill me-1"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <p class="p-0 m-0 text-center">Agradezco a todo el equipo de cerca.pro por estar cerca de verdad de nuestras necesidades.</p>
+                    </div>
+                    <div class="col d-flex flex-column align-items-center">
+                        <!-- Persona -->
+                        <div class="testimonios__item__avatar d-flex flex-row align-items-center gap-3 mb-3">
+                            <img class="rounded-pill" src="./assets/img/avatar-3.jpg" alt="Testimonio 3">
+                            <div class="d-flex flex-column">
+                                <p class="mb-1 p-0"><b>Juan Cruz González</b></p>
+                                <p class="m-0 p-0">Director General</p>
+                            </div>
+                        </div>
+                        <!-- Estrellas -->
+                        <div class="testimonios__item__estrellas mb-3">
+                            <i class="bi bi-star-fill me-1"></i>
+                            <i class="bi bi-star-fill me-1"></i>
+                            <i class="bi bi-star-fill me-1"></i>
+                            <i class="bi bi-star-fill me-1"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <p class="p-0 m-0 text-center">Super recomiendo los servicios de cerca.pro. Son profesionales en lo que hacen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Contacto -->
+    <div id="contacto" class="contacto container container-100 container-75">
+    </div>
 
     <script src="./assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
