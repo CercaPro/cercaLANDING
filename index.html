@@ -36,8 +36,8 @@
                             <li class="nav-item"><a id="btnMenuMob1" class="nav-link px-4 text-white fw-light" href="#home">Inicio</a></li>
                             <li class="nav-item"><a id="btnMenuMob2" class="nav-link px-4 text-white fw-light" href="#nosotros">Acerca de</a></li>
                             <li class="nav-item"><a id="btnMenuMob3" class="nav-link px-4 text-white fw-light" href="#beneficios">Servicios</a></li>
-                            <li class="nav-item"><a id="btnMenuMob5" class="nav-link px-4 text-white fw-light" href="#testimonios">Testimonios</a></li>
-                            <li class="nav-item"><a id="btnMenuMob6" class="nav-link px-4 text-white fw-light" href="#contacto">Contacto</a></li>
+                            <li class="nav-item"><a id="btnMenuMob4" class="nav-link px-4 text-white fw-light" href="#testimonios">Testimonios</a></li>
+                            <li class="nav-item"><a id="btnMenuMob5" class="nav-link px-4 text-white fw-light" href="#contacto">Contacto</a></li>
                         </ul>
                         <div class="px-4">
                             <a class="menu--mob__items__btn btn btn-light rounded-pill px-4" href="https://app.cerca.pro/" target="_blank">Inicia sesión</a>
@@ -56,7 +56,7 @@
                     </div>
                 </nav>
                 <!-- Navbar y menú Desktop -->
-                <nav class="navbar--desktop d-none d-lg-block navbar navbar-expand-lg py-4">
+                <nav class="navbar--desktop d-none d-lg-block navbar navbar-expand-lg">
                     <div class="container">
                         <a class="navbar--desktop__logo navbar-brand" href="./index.html">
                             <img class="navbar-brand-item" src="./assets/img/logo-hrznt.png" alt="Logo Cerca.pro">
@@ -423,8 +423,59 @@
         </section>
     </main>
     <!-- Contacto -->
-    <div id="contacto" class="contacto container container-100 container-75">
+    <div id="contacto" class="contacto container container-100 container-75 d-flex flex-column flex-lg-row align-items-center gap-4">
+        <div class="contacto__info">
+            <h3 class="text-blue-cerca montserrat-600 mb-2">Sigamos conectados</h3>
+            <p class="mb-4">Déjanos tu consulta y te responderemos cuanto antes.</p>
+            <div class="d-flex flex-row align-items-center mb-3">
+                <img class="contacto__info__icono me-3" src="./assets/img/ico-whatsapp.svg" alt="Whatsapp">
+                <p class="p-0 m-0">+54 911 54 58 59 46</p>
+            </div>
+            <div class="d-flex flex-row align-items-center mb-3">
+                <img class="contacto__info__icono me-3" src="./assets/img/ico-ubicacion.svg" alt="Dirección">
+                <p class="p-0 m-0">Av. Juan de Garay 151</p>
+            </div>
+            <div class="d-flex flex-row align-items-center">
+                <img class="contacto__info__icono me-3" src="./assets/img/ico-correo.svg" alt="Correo">
+                <a href="mailto:info@escueladeokr.com">
+                    info@cerca.pro
+                </a>
+            </div>
+        </div>
+        <div class="contacto__img d-flex flex-column align-items-center justify-content-center">
+            <img src="./assets/img/contacto.png" alt="Contacto" >
+        </div>
     </div>
+    <footer class="container-fluid">
+        <div class="container container-100 container-75 d-flex flex-column flex-row mb-5">
+            <div class="row">
+                <div class="logo col-12 col-lg-4 mb-4 mb-lg-0">
+                    <img src="./assets//img/logo-hrznt-2.png" alt="Logo Cerca" >
+                </div>
+                <div class="menu col-12 col-lg-4 mb-4 mb-lg-0">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#nosotros">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#beneficios">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#testimonios">Testimonios</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="redes col-12 col-lg-4">
+                    <h5 class="mb-3 text-white montserrat-600">Síguenos en</h5>
+                    <div class="d-flex flex-row">
+                        <a href="https://www.linkedin.com" target="_blank">
+                            <img class="me-3 footer__info__redes__icono" src="./assets/img/ico-linkedin.svg" alt="LinkedIn">
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img class="footer__info__redes__icono" src="./assets/img/ico-facebook.svg" alt="Facebook">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="m-0 p-0 text-center text-white">Desarrollado por Design Studios para ®Cerca.pro</p>
+    </footer>
 
     <script src="./assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

@@ -21,7 +21,6 @@ const btn2 = document.getElementById("btnMenuMob2");
 const btn3 = document.getElementById("btnMenuMob3");
 const btn4 = document.getElementById("btnMenuMob4");
 const btn5 = document.getElementById("btnMenuMob5");
-const btn6 = document.getElementById("btnMenuMob6");
 
 const closeMenu = () => {
     menu.style.display = "none";
@@ -32,4 +31,15 @@ btn2.addEventListener("click", closeMenu)
 btn3.addEventListener("click", closeMenu)
 btn4.addEventListener("click", closeMenu)
 btn5.addEventListener("click", closeMenu)
-btn6.addEventListener("click", closeMenu)
+
+document.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbar--desktop");
+  
+  if (window.scrollY > 50) {
+    navbar.classList.remove("bg-transparent");
+    navbar.classList.add("bg-colored");
+  } else {
+    navbar.classList.remove("bg-colored");
+    navbar.classList.add("bg-transparent");
+  }
+});

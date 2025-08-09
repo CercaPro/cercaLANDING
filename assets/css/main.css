@@ -11039,6 +11039,28 @@ main .testimonios__slider__item__estrellas i {
 .contacto {
   padding: 64px 24px;
 }
+.contacto__info {
+  width: 100%;
+}
+.contacto__info__icono {
+  width: 24px;
+  height: auto;
+}
+.contacto__img {
+  width: 100%;
+}
+.contacto__img img {
+  max-width: 100%;
+  width: 300px;
+}
+
+footer {
+  background-color: #006DF0;
+  padding: 64px 24px;
+}
+footer .logo img {
+  width: 160px;
+}
 
 @media screen and (min-width: 768px) {
   .navbar__banner .navbar__banner--container .banner__info {
@@ -11061,11 +11083,18 @@ main .testimonios__slider__item__estrellas i {
     width: 75%;
   }
 
+  .navbar__banner .navbar__banner--container header {
+    /* Estado normal (arriba del todo) */
+    /* Estado con scroll */
+  }
   .navbar__banner .navbar__banner--container header .navbar--desktop {
     position: fixed;
     width: 100%;
     margin: 0 auto;
     z-index: 999;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    transition: background-color 0.3s ease, padding-top 0.3s ease, padding-bottom 0.3s ease;
   }
   .navbar__banner .navbar__banner--container header .navbar--desktop__logo img {
     height: 60px;
@@ -11088,6 +11117,16 @@ main .testimonios__slider__item__estrellas i {
   }
   .navbar__banner .navbar__banner--container header .navbar--desktop .nav-link:hover::after {
     width: 100%;
+  }
+  .navbar__banner .navbar__banner--container header .navbar--desktop.bg-transparent {
+    background-color: transparent;
+  }
+  .navbar__banner .navbar__banner--container header .navbar--desktop.bg-colored {
+    background-color: rgba(255, 255, 255, 0.95);
+    /* blanco semitransparente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
   .navbar__banner .navbar__banner--container .banner__info {
     padding-top: 158px;
@@ -11164,6 +11203,13 @@ main .testimonios__slider__item__estrellas i {
   }
 
   .contacto {
+    padding: 64px 0;
+  }
+  .contacto__img img {
+    width: 400px;
+  }
+
+  footer {
     padding: 64px 0;
   }
 }
